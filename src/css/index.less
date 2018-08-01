@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .img{
+    width: 50%;
+    height: 0;
+    padding-top: 50%;
+    position: relative;
+    left: 25%;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .info{
+    margin-top: 40px;
+    text-align: center;
+    height: 126px;
+    p:nth-child(1){
+      font-size: 24px;
+      line-height: 36px;
+      color:rgba(255, 255, 255, 0.86);
+    }
+    p:nth-child(2),p:nth-child(3){
+      font-size: 12px;
+      line-height: 16px;
+      color:rgba(255, 255, 255, 0.5);
+    }
+  }
+  .progress{
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    .cur-time{
+      width: 60px;
+      height: 40px;
+    }
+    .pro{
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      height: 40px;
+      .re-pro{
+        position: relative;
+        width: calc(100% - 10px);
+        margin: 0 auto;
+        .all-pro{
+          width: 100%;
+          height: 3px;
+          margin-top: 19px;
+          background-color: #fff;
+        }
+        .cur-pro{
+          position: absolute;
+          top: 0px;
+          transform: translate(-100%);
+          width: 100%;
+          height: 3px;
+          background-color: rgb(184, 37, 37);
+          .point{
+            position: relative;
+            display: block;
+            left: calc(100% - 5px);
+            top:-4px;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .all-time{
+      width: 60px;
+    }
+  }
+  .ctr{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    div{
+      width: 20%;
+      height: 100%;
+      float: left;
+      background:no-repeat center;
+      background-size: 30% ;
+    }
+    .not-like{
+      background-image: url('../img/icon-like.png');
+    }
+    .like{
+      background-image: url('../img/icon-like-solid.png');
+    }
+    .pre{
+      background-image: url('../img/icon-prev.png');
+    }
+    .play{
+      background-image: url('../img/icon-play.png');
+    }
+    .pause{
+      background-image: url('../img/icon-pause.png');
+    }
+    .next{
+      background-image: url('../img/icon-next.png');
+    }
+    .list{
+      background-image: url('../img/icon-list.png');
+    }
+  }
+}
